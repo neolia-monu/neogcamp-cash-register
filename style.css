@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #34d399;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* margin: 0px; */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid aqua; */
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.description{
+    font-size: large;
+}
+
+.heading{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#check-button {
+    width: 20%;
+    padding: 0.4rem 0.8rem;
+    font-size: medium;
+    border: #fb7185;
+    color: white;
+    margin: 1rem;
+}
+
+input[type="text"]{
+    padding: 0.5rem;
+    width: 50%;
+    font-size: medium;
+    border-radius: 4px;
+    margin: 1rem;
+    border: 2px solid var(--primary-color);
+
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+}
+
+button{
+    background-color: var(--primary-color);
+    border-radius: 0.4rem;
+}
+
+table, td, th {
+    border: 1px solid var(--primary-color);
+    margin: 0;
+    border-spacing: 0;
+}
+
+table td {
+    padding: 1.2rem;
+}
+
+table > caption{
+    margin: 1rem;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#error-message{
+    font-size: larger;
+    font-weight: bold;
+    color: red;
+}
