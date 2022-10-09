@@ -14,19 +14,20 @@ checkButton.addEventListener("click", () => {
 
     hideMessage();
 
-    const billValue = parseInt(billAmount.value);
-    const cashValue = parseInt(cashGiven.value);
+    const billValue = Number(billAmount.value);
+    const cashValue = Number(cashGiven.value);
 
-    console.log(cashValue);
-    console.log(billValue);
+    // console.log(cashValue);
+    // console.log(billValue);
 
     if (!Object.is(billValue, NaN) && !Object.is(cashValue, NaN)) {
         if (billAmount.value > 0) {
-            if (cashGiven.value >= billAmount.value) {
-                const amountToBeReturned = cashGiven.value - billAmount.value;
-                console.log(amountToBeReturned);
+            if (Number(cashGiven.value) >= Number(billAmount.value)) {
+                const amountToBeReturned = Number(cashGiven.value) - Number(billAmount.value);
+                // console.log(amountToBeReturned);
                 calculateChange(amountToBeReturned);
             } else {
+                // console.log("error:   1");
                 showMessage("The cash provided should atleast be equal to the bill amount");
             }
         } else {
